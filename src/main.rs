@@ -1,5 +1,5 @@
 use std::io;
-
+//Main function
 fn main() {
     println!("Guess the number");
 
@@ -16,6 +16,7 @@ fn main() {
     println!("The value of x is: {x}");
     another_function(5);
 }
+//Another function
 fn another_function(x: i32) {
     println!("The value in the function is {x}");
 }
