@@ -10,8 +10,9 @@ fn main() {
     io::stdin()
         .read_line(&mut guess)
         .expect("failed to read line");
+    let number: i32 = guess.trim().parse().expect("Input is not a integer!");
 
-    println!("You guessed: {}", guess);
+    println!("You guessed: {}", number);
     let x = 5;
     println!("The value of x is: {x}");
     another_function(5);
