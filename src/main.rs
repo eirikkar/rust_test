@@ -15,8 +15,16 @@ fn main() {
     let x = 5;
     println!("The value of x is: {x}");
     another_function(5);
+    check_value(2);
 }
 //Another function
 fn another_function(x: i32) {
     println!("The value in the function is {x}");
+}
+fn check_value(x: i32) {
+    if x < 5 {
+        println!("Value is less than 5")
+    } else {
+        println!("Value is more than 5")
+    }
 }
